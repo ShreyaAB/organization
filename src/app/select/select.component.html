@@ -1,0 +1,25 @@
+<button class="btn-primary" (click)="onseldelete()">Delete</button>
+<br>
+    <table class="table table-striped">
+    <thead>
+        <tr>
+        <th >Action</th>
+          <th scope="col">Article Id</th>
+          <th scope="col">Article Name</th>
+          <th scope="col">content</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of arrarticle">
+          <td><input type="checkbox" (click)="selcheckbox(item)" ></td>
+          <td>{{item.id}}</td>
+          <td>{{item.name}}</td>
+          <td>{{item.description}}</td>
+          <td></td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+

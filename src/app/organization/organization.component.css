@@ -1,0 +1,23 @@
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+  padding-top: 10px;
+}
+.modal-open .modal {
+  overflow-x: visible;
+  overflow-y: auto;
+}
+
+.image{
+  background-image:url("src\assets\fish.jpg");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: block;
+  background-size: cover;
+  background-position: 50% 40%;
+  opacity: 6;
+  z-index: -1;
+
+  }

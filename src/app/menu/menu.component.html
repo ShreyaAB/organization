@@ -1,0 +1,17 @@
+<!-- <p>menu works!</p> -->
+<p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000">
+  <h1 style="font-weight:normal">Organization</h1>
+
+  <div class="nav-item" ><a routerLinkActive="active" routerLink="/set" style="color: black">Settings</a></div>&nbsp;
+  <div class="nav-item"><a routerLinkActive="active" routerLink="/pro" style="color: black">Profile</a></div>&nbsp;
+  <div class="nav-item"><a routerLinkActive="active" routerLink="/det" style="color: black">details</a></div>&nbsp;
+  <div class="nav-item"><a routerLinkActive="active" routerLink="/check" style="color: black">Checkbox</a></div>&nbsp;
+  <div class="nav-item"><a routerLinkActive="active" routerLink="/sel" style="color: black">Selection</a></div>&nbsp;
+</p-sidebar>
+<!-- <button pButton type="button" (click)="visibleSidebar1 = true" icon="pi pi-arrow-right"></button> -->
+<mat-button-toggle-group #group = "matButtonToggleGroup">
+<mat-button-toggle type="button" (click)="visibleSidebar1=true" disabled>
+<mat-icon>format_align_justify</mat-icon>
+ </mat-button-toggle>
+</mat-button-toggle-group>
+
